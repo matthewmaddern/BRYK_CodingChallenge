@@ -17,7 +17,7 @@ class GoodsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create good" do
     assert_difference('Good.count') do
-      post goods_url, params: { good: { cosignment_id: @good.cosignment_id, destination: @good.destination, entry_time: @good.entry_time, exit_time: @good.exit_time, name: @good.name, source: @good.source, type: @good.type } }
+      post goods_url, params: { good: { cosignment_id: @good.cosignment_id, destination: @good.destination, entry_time: @good.entry_time, exit_time: @good.exit_time, good_type: @good.good_type, name: @good.name, source: @good.source } }
     end
 
     assert_redirected_to good_url(Good.last)
@@ -34,7 +34,7 @@ class GoodsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update good" do
-    patch good_url(@good), params: { good: { cosignment_id: @good.cosignment_id, destination: @good.destination, entry_time: @good.entry_time, exit_time: @good.exit_time, name: @good.name, source: @good.source, type: @good.type } }
+    patch good_url(@good), params: { good: { cosignment_id: @good.cosignment_id, destination: @good.destination, entry_time: @good.entry_time, exit_time: @good.exit_time, good_type: @good.good_type, name: @good.name, source: @good.source } }
     assert_redirected_to good_url(@good)
   end
 

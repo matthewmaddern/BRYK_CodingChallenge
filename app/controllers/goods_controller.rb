@@ -65,6 +65,6 @@ class GoodsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def good_params
-      params.require(:good).permit(:cosignment_id, :type, :name, :source, :destination, :entry_time, :exit_time)
+      params.require(:good).permit(:cosignment_id, :good_type, :name, :source, :destination, :entry_time, :exit_time)
     end
 end

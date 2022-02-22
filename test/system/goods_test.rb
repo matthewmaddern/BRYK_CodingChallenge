@@ -18,9 +18,9 @@ class GoodsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @good.destination
     fill_in "Entry time", with: @good.entry_time
     fill_in "Exit time", with: @good.exit_time
+    fill_in "Good type", with: @good.good_type
     fill_in "Name", with: @good.name
     fill_in "Source", with: @good.source
-    fill_in "Type", with: @good.type
     click_on "Create Good"
 
     assert_text "Good was successfully created"
@@ -35,9 +35,9 @@ class GoodsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @good.destination
     fill_in "Entry time", with: @good.entry_time
     fill_in "Exit time", with: @good.exit_time
+    fill_in "Good type", with: @good.good_type
     fill_in "Name", with: @good.name
     fill_in "Source", with: @good.source
-    fill_in "Type", with: @good.type
     click_on "Update Good"
 
     assert_text "Good was successfully updated"

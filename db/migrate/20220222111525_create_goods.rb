@@ -2,7 +2,7 @@ class CreateGoods < ActiveRecord::Migration[6.1]
   def change
     create_table :goods do |t|
       t.string :cosignment_id
-      t.string :type
+      t.string :good_type
       t.string :name
       t.string :source
       t.string :destination

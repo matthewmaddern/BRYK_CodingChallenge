@@ -2,18 +2,18 @@
 
 one:
   cosignment_id: MyString
-  type: 
+  good_type: MyString
   name: MyString
   source: MyString
   destination: MyString
-  entry_time: 2022-02-22 21:04:28
-  exit_time: 2022-02-22 21:04:28
+  entry_time: 2022-02-22 21:45:25
+  exit_time: 2022-02-22 21:45:25
 
 two:
   cosignment_id: MyString
-  type: 
+  good_type: MyString
   name: MyString
   source: MyString
   destination: MyString
-  entry_time: 2022-02-22 21:04:28
-  exit_time: 2022-02-22 21:04:28
+  entry_time: 2022-02-22 21:45:25
+  exit_time: 2022-02-22 21:45:25

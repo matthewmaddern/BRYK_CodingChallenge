@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Cosignment</th>
-      <th>Type</th>
+      <th>Good type</th>
       <th>Name</th>
       <th>Source</th>
       <th>Destination</th>
@@ -20,7 +20,7 @@
     <% @goods.each do |good| %>
       <tr>
         <td><%= good.cosignment_id %></td>
-        <td><%= good.type %></td>
+        <td><%= good.good_type %></td>
         <td><%= good.name %></td>
         <td><%= good.source %></td>
         <td><%= good.destination %></td>
