@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cosignment:</strong>
+  <%= @good.cosignment_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @good.type %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @good.name %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @good.source %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @good.destination %>
+</p>
+
+<p>
+  <strong>Entry time:</strong>
+  <%= @good.entry_time %>
+</p>
+
+<p>
+  <strong>Exit time:</strong>
+  <%= @good.exit_time %>
+</p>
+
+<%= link_to 'Edit', edit_good_path(@good) %> |
+<%= link_to 'Back', goods_path %>

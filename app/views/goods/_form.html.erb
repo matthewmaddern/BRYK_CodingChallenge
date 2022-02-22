@@ -1,0 +1,52 @@
+<%= form_with(model: good) do |form| %>
+  <% if good.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(good.errors.count, "error") %> prohibited this good from being saved:</h2>
+
+      <ul>
+        <% good.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cosignment_id %>
+    <%= form.text_field :cosignment_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :destination %>
+    <%= form.text_field :destination %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entry_time %>
+    <%= form.time_select :entry_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exit_time %>
+    <%= form.time_select :exit_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
