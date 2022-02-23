@@ -1,0 +1,19 @@
+<p id="notice" style="color: red;"><%= notice %></p>
+
+<h1>Login</h1>
+
+<%= form_with(url: login_path) do |form| %>
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
