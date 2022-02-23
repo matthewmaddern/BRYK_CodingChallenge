@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cosignment_id: MyString
+  good_type: MyString
+  name: MyString
+  source: MyString
+  destination: MyString
+  entry_time: 2022-02-22 21:45:25
+  exit_time: 2022-02-22 21:45:25
+
+two:
+  cosignment_id: MyString
+  good_type: MyString
+  name: MyString
+  source: MyString
+  destination: MyString
+  entry_time: 2022-02-22 21:45:25
+  exit_time: 2022-02-22 21:45:25
