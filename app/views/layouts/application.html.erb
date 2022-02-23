@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <% if @current_user %>
+      User: <%= @current_user[:username] %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
