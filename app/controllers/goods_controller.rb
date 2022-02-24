@@ -13,7 +13,17 @@ class GoodsController < ApplicationController
 
   # GET /goods/new
   def new
-    @good = Good.new
+  end
+
+  # POST /bulk-upload
+  def bulk_upload
+    BulkUpload.upload(params)
+
+  rescue BulkUpload::BulkUploadError => e
+    flash[:error] = e.message
+    respond_to do |format|
+      format.html { render :new, status: :unprocessable_entity }
+    end
   end
 
   # GET /goods/1/edit
