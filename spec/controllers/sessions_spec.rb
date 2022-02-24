@@ -6,7 +6,7 @@ RSpec.describe GoodsController, type: :controller do
 
   describe "GET /index" do
 
-    it "will edirect unauthorised users" do
+    it "will redirect unauthorised users" do
       get :index
 
       expect(response).to have_http_status(:redirect)
