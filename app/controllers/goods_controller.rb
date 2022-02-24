@@ -23,6 +23,7 @@ class GoodsController < ApplicationController
     flash[:error] = e.message
     respond_to do |format|
       format.html { render :new, status: :unprocessable_entity }
+      format.json { render json: e, status: :unprocessable_entity }
     end
   end
 
