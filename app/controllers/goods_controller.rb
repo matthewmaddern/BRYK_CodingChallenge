@@ -15,6 +15,14 @@ class GoodsController < ApplicationController
   def new
   end
 
+  def bulk_upload_template
+    send_file(
+      "#{Rails.root}/public/bulk_upload.csv",
+      filename: 'bulk_upload.csv',
+      type: 'text/csv'
+    )
+  end
+
   # POST /bulk-upload
   def bulk_upload
     BulkUpload.upload(params)

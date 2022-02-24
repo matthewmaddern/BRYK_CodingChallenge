@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :goods
   post '/bulk-upload', to: 'goods#bulk_upload'
+  get  '/bulk_upload_template', to: 'goods#bulk_upload_template'
 
   get  '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
